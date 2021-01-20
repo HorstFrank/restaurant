@@ -3,6 +3,7 @@
 // $body-bg: #000;
 // $body-color: white;
 $primary: hotpink;
+$secondary: rgb(64, 208, 233);
 // $font-family-base: Arial;
 
 // Include all Bootstrap
@@ -10,5 +11,22 @@ $primary: hotpink;
 
 // Add you custom CSS
 body {
-  padding: 20px;
+  // padding: 20px;
+  // font-family: "Warnes";
+  font-family: "Warnes";
+}
+
+// .titlename {
+//   font-size: "100px";
+// }
+
+.page-header {
+  background-image: url("https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA22564.jpg");
+  -webkit-background-size: cover; /* For WebKit*/
+  -moz-background-size: cover; /* Mozilla*/
+  -o-background-size: cover; /* Opera*/
+  background-size: 1000px;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
 }
