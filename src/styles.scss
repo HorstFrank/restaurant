@@ -1,14 +1,74 @@
 // Your variable overrides
 // See node_modules/bootstrap/scss/_variables.scss for all variables
-$body-bg: #000;
-$body-color: white;
+// $body-bg: #000;
+// $body-color: white;
 $primary: hotpink;
-$font-family-base: Arial;
+$secondary: rgb(64, 208, 233);
+// $font-family-base: Arial;
 
 // Include all Bootstrap
 @import "~bootstrap/scss/bootstrap";
 
 // Add you custom CSS
 body {
-  padding: 20px;
+  // padding: 20px;
+  // font-family: "Warnes";
+  // font-family: "Warnes";
 }
+
+.titlename {
+  font-family: "Warnes";
+  font-size: 100px;
+
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080,
+    0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+}
+
+.subtitle {
+  font-family: "Warnes";
+  font-size: 30px;
+
+  color: #fff;
+  text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px #0373a7, 0 0 15px #0373a7,
+    0 0 20px #0373a7, 0 0 25px #0373a7, 0 0 33px #0373a7;
+}
+.page-header {
+  background-image: url("https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA22564.jpg");
+  -webkit-background-size: cover; /* For WebKit*/
+  -moz-background-size: cover; /* Mozilla*/
+  -o-background-size: cover; /* Opera*/
+  background-size: 1000px;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+}
+
+.topspace {
+  margin-top: 16px;
+}
+
+.header-background {
+  background: url(https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA22564.jpg);
+}
+
+// .rotate {
+//   animation: rotation 2s;
+// }
+
+// .linear {
+//   animation-timing-function: linear;
+// }
+
+// .infinite {
+//   animation-iteration-count: infinite;
+// }
+
+// @keyframes rotation {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(359deg);
+//   }
+// }
