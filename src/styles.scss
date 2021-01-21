@@ -1,8 +1,9 @@
 // Your variable overrides
 // See node_modules/bootstrap/scss/_variables.scss for all variables
-$body-bg: #000;
-$body-color: white;
+// $body-bg: #000;
+// $body-color: white;
 $primary: hotpink;
+$secondary: rgb(28, 200, 212);
 $font-family-base: Arial;
 
 // Include all Bootstrap
@@ -10,9 +11,6 @@ $font-family-base: Arial;
 
 // Add you custom CSS
 body {
-<<<<<<< main
-  padding: 20px;
-=======
   // padding: 20px;
   // font-family: "Warnes";
   // font-family: $font-family-base;
@@ -207,5 +205,4 @@ blink {
   100% {
     visibility: visible;
   }
->>>>>>> local
 }
