@@ -10,5 +10,202 @@ $font-family-base: Arial;
 
 // Add you custom CSS
 body {
+<<<<<<< main
   padding: 20px;
+=======
+  // padding: 20px;
+  // font-family: "Warnes";
+  // font-family: $font-family-base;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.titlename {
+  font-family: "Warnes";
+  font-size: 100px;
+
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px $primary, 0 0 30px $primary,
+    0 0 40px $primary, 0 0 55px $primary, 0 0 75px $primary;
+}
+
+// .shitty-neon {
+//   animation: shitty-neon 10s linear infinite;
+// }
+
+.subtitle {
+  font-family: "Warnes";
+  font-size: 30px;
+
+  color: #fff;
+  text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px $secondary,
+    0 0 15px $secondary, 0 0 20px $secondary, 0 0 25px $secondary,
+    0 0 33px $secondary;
+}
+.page-header {
+  background-image: url("https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA22564.jpg");
+  // -webkit-background-size: cover; /* For WebKit*/
+  // -moz-background-size: cover; /* Mozilla*/
+  // -o-background-size: cover; /* Opera*/
+  background-size: 1000px;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+}
+
+.card {
+  margin: 10px auto;
+}
+
+.topspace {
+  margin-top: 16px;
+}
+
+.header-background {
+  // background: url(https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA22564.jpg);
+}
+
+.subline {
+  margin-top: 16px;
+  font-family: monospace;
+}
+
+.searchbar {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.searchbar-holder {
+  margin: 0px 0px 30px 0px;
+}
+
+.fa-search {
+  color: white;
+}
+
+.header {
+  background-image: url(https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA22564.jpg);
+}
+
+.cover {
+  //staple regular bg fits the header-div
+  // background-image: url(https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA22564.jpg);
+
+  // background-size: cover;
+  // overflow: hidden;
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-position: top center;
+  // animation: rotatebg 600s linear infinite;
+  // clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+}
+
+.rotate {
+  // margin: auto;
+  // background-image: url(https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA22564.jpg);
+  // background-size: 100% auto;
+  // background-repeat: no-repeat;
+  // animation: rotatebg 8s ease-in-out infinite;
+
+  // clip-path: inset(10px 20px 30px 40px);
+  // clip-path: circle(10px at 0 100px);
+
+  // clip-path: inset(100 100 100 100);
+
+  // clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 0%);
+
+  // background-size: contain;
+  // background-size: cover;
+
+  position: absolute;
+  // position: relative;
+  // width: 200%;
+  // height: 200%;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  // top: 50%;
+  // left: 50%;
+  z-index: -1;
+  // background: url(https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA22564.jpg)
+  // 0 0 repeat;
+  // -webkit-transform: rotatebg;
+  // -moz-transform: rotatebg;
+  // -ms-transform: rotatebg;
+  // -o-transform: rotatebg;
+  // transform: rotatebg();
+  animation: rotatebg 900s linear infinite;
+}
+
+@keyframes rotatebg {
+  0% {
+    // background-position: 0 0, 0 0, 0 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+// @keyframes shitty-neon {
+//   0% {
+//     // background-position: 0 0, 0 0, 0 0;
+//     // color: #fff;
+//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px $primary, 0 0 30px $primary,
+//       0 0 40px $primary, 0 0 55px $primary, 0 0 75px $primary;
+//   }
+
+//   80% {
+//     // color: #fff;
+//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px $primary, 0 0 30px $primary,
+//       0 0 40px $primary, 0 0 55px $primary, 0 0 75px $primary;
+//   }
+//   81% {
+//     color: rgb(48, 44, 44);
+//     text-shadow: 0 0 5px rgb(54, 34, 34), 0 0 10px rgb(46, 41, 41),
+//       0 0 20px #55454d, 0 0 30px #2e292b, 0 0 40px #36262e, 0 0 55px #2b2226,
+//       0 0 75px #181516;
+//   }
+//   82% {
+//     // color: #fff;
+//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px $primary, 0 0 30px $primary,
+//       0 0 40px $primary, 0 0 55px $primary, 0 0 75px $primary;
+//   }
+//   83% {
+//     color: rgb(48, 44, 44);
+//     text-shadow: 0 0 5px rgb(54, 34, 34), 0 0 10px rgb(46, 41, 41),
+//       0 0 20px #55454d, 0 0 30px #2e292b, 0 0 40px #36262e, 0 0 55px #2b2226,
+//       0 0 75px #181516;
+//   }
+//   100% {
+//     // color: #fff;
+//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px $primary, 0 0 30px $primary,
+//       0 0 40px $primary, 0 0 55px $primary, 0 0 75px $primary;
+//   }
+// }
+
+blink {
+  font-family: "Warnes";
+  font-size: 20px;
+  color: $primary;
+  -webkit-animation: 2s linear infinite condemned_blink_effect; /* for Safari 4.0 - 8.0 */
+  animation: 2s linear infinite condemned_blink_effect;
+}
+
+@keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+>>>>>>> local
 }
