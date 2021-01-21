@@ -9,685 +9,167 @@
     <link rel="shortcut icon" href="public/favicon.ico" />
     <title>Last Meal at Milliways</title>
 
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Warnes&display=swap");
-    </style>
   </head>
-  <script>
-    //   aa();
 
-    const rw = [
-      "marginates",
-      "subtilities",
-      "virga",
-      "yegg",
-      "lactases",
-      "whup",
-      "internalise",
-      "soapy",
-      "aquilegias",
-      "decorum",
-      "maturational",
-      "chauvinists",
-      "woodsias",
-      "recharge",
-      "baptizes",
-      "levins",
-      "vulcanite",
-      "corroborators",
-      "twiddlers",
-      "retinae",
-      "benefitting",
-      "deficiently",
-      "cassingle",
-      "cesurae",
-      "unapologetic",
-      "backhauled",
-      "retroactively",
-      "infuscate",
-      "flakinesses",
-      "mixtures",
-      "dissuader",
-      "lenitive",
-      "diaphanous",
-      "researcher",
-      "raffinoses",
-      "ediles",
-      "instrumentality",
-      "caddies",
-      "cantatrice",
-      "solfeggios",
-      "bruise",
-      "weal",
-      "interdictions",
-      "infra",
-      "ceramicists",
-      "jacinthe",
-      "temptations",
-      "ferredoxin",
-      "croquettes",
-      "choicenesses",
-      "bonspells",
-      "divot",
-      "compasses",
-      "eyewashes",
-      "tyes",
-      "misoneism",
-      "mild",
-      "aglare",
-      "gnashes",
-      "cliches",
-      "unexpected",
-      "radicel",
-      "anabaptisms",
-      "swallower",
-      "maryjane",
-      "trock",
-      "sippers",
-      "cannoneer",
-      "lippy",
-      "conductometric",
-      "sculler",
-      "diarrhoeas",
-      "unhysterically",
-      "memorialised",
-      "santours",
-      "pentosans",
-      "echo",
-      "superclasses",
-      "ringtails",
-      "kae",
-      "auriculate",
-      "raffler",
-      "deficient",
-      "manifestoed",
-      "nostrils",
-      "dippers",
-      "lithosols",
-      "calculate",
-      "lawmakings",
-      "societally",
-      "akinesias",
-      "exsiccation",
-      "voluntarism",
-      "technologized",
-      "placard",
-      "carns",
-      "postfeminist",
-      "redpoll",
-      "performative",
-      "yeanlings",
-      "succulences",
-      "stigmasterol",
-      "neats",
-      "indelibly",
-      "revertive",
-      "anticolonialism",
-      "richweeds",
-      "preradio",
-      "defoams",
-      "husbanding",
-      "sullenest",
-      "circulates",
-      "misadapting",
-      "reseeks",
-      "smugnesses",
-      "nunatak",
-      "futilitarians",
-      "abstentions",
-      "polyploid",
-      "mailroom",
-      "dynastically",
-      "prelect",
-      "binucleate",
-      "truckmasters",
-      "epidemicity",
-      "citizeness",
-      "myeline",
-      "triathlete",
-      "misdescribe",
-      "aching",
-      "florigen",
-      "reusable",
-      "exhilaratingly",
-      "kiwis",
-      "meseems",
-      "shlumped",
-      "desalinator",
-      "postulated",
-      "secretagogue",
-      "clicked",
-      "morassy",
-      "gearcase",
-      "zoris",
-      "shiplaps",
-      "glia",
-      "soapworts",
-      "massas",
-      "senatorian",
-      "alipeds",
-      "tasteful",
-      "hardnose",
-      "voluntaristic",
-      "statists",
-      "fugitive",
-      "racetracker",
-      "synapsing",
-      "serosal",
-      "trichinas",
-      "goons",
-      "periodicities",
-      "procambia",
-      "righteously",
-      "pangeneses",
-      "coralline",
-      "willpowers",
-      "greengrocery",
-      "houseless",
-      "paternal",
-      "propound",
-      "sectarianized",
-      "cofavorites",
-      "legitimizing",
-      "millines",
-      "rabbinates",
-      "flauntier",
-      "unzip",
-      "digammas",
-      "tenesmuses",
-      "unkinking",
-      "orthoses",
-      "unavailability",
-      "atheoretical",
-      "horal",
-      "nutters",
-      "zoril",
-      "unprepared",
-      "cellmates",
-      "exercitations",
-      "vivisectors",
-      "fireweeds",
-      "imported",
-      "iroko",
-      "felloes",
-      "goalies",
-      "unrumpled",
-      "tyring",
-      "anticorrosives",
-      "apprenticeship",
-      "rencountering",
-      "sayonara",
-      "orientating",
-      "jackhammer",
-      "trough",
-      "proportioned",
-      "harpooning",
-      "spontaneous",
-      "defrags",
-      "inkwells",
-      "clasp",
-      "sneezed",
-      "stiflingly",
-      "susurrate",
-      "stages",
-      "superfund",
-      "wiggy",
-      "bronchodilators",
-      "unwits",
-      "reconstructors",
-      "coped",
-      "dramatisations",
-      "bets",
-      "feted",
-      "clochard",
-      "gallbladders",
-      "outjuggling",
-      "turnout",
-      "vanitories",
-      "flankers",
-      "maxwells",
-      "bohrium",
-      "firebrands",
-      "rebutton",
-      "lychnises",
-      "plisse",
-      "encaging",
-      "savvier",
-      "differentiated",
-      "bided",
-      "kakis",
-      "razorbills",
-      "doggerels",
-      "glamorousnesses",
-      "chipboards",
-      "whited",
-      "battiness",
-      "transmitters",
-      "triumphalists",
-      "unmuzzled",
-      "fireplaces",
-      "lovesick",
-      "grummer",
-      "depose",
-      "seraphin",
-      "refocus",
-      "installed",
-      "pithy",
-      "glides",
-      "tailbacks",
-      "redemanded",
-      "benzoate",
-      "entrees",
-      "proxy",
-      "supernate",
-      "bourne",
-      "deleing",
-      "resittings",
-      "technologizes",
-      "soggily",
-      "redintegrated",
-      "paeon",
-      "spit",
-      "guildhalls",
-      "dolomitizing",
-      "skyhooks",
-      "verdicts",
-      "motherland",
-      "glamourless",
-      "epilations",
-      "libertarian",
-      "juju",
-      "metastability",
-      "nonpolitical",
-      "disentanglement",
-      "expletive",
-      "motleys",
-      "biosphere",
-      "sparse",
-      "murderess",
-      "kerosines",
-      "burn",
-      "tampered",
-      "representers",
-      "cravers",
-      "bravely",
-      "indictors",
-      "tubaists",
-      "eulogizes",
-      "cooperage",
-      "misrecollection",
-      "wikiup",
-      "exportabilities",
-      "sympodium",
-      "reaccepting",
-      "rawhided",
-      "babblements",
-      "backswept",
-      "geophagia",
-      "withstood",
-      "misdriving",
-      "decamping",
-      "totalised",
-      "gandered",
-      "ischemias",
-      "whoosh",
-      "digital",
-      "nonequivalence",
-      "jockeyish",
-      "thicken",
-      "vitriols",
-      "vilification",
-      "tretinoin",
-      "urbanists",
-      "dependances",
-      "whodunnit",
-      "inclipping",
-      "noesises",
-      "photodiodes",
-      "soliloquizer",
-      "postamputation",
-      "unalerted",
-      "postdiluvian",
-      "lifelessness",
-      "jiglike",
-      "scrooching",
-      "valvar",
-      "cupronickel",
-      "mairs",
-      "anablepses",
-      "titfers",
-      "rewarm",
-      "gadgetries",
-      "tussal",
-      "sovietized",
-      "arsine",
-      "accentual",
-      "zikkurats",
-      "potences",
-      "vanadic",
-      "symbolizes",
-      "cups",
-      "curdiest",
-      "bullying",
-      "drabbles",
-      "complainer",
-      "blackhander",
-      "microtechnic",
-      "unanticipatedly",
-      "theorise",
-      "aerometry",
-      "latosolic",
-      "esthesia",
-      "panners",
-      "shadowiness",
-      "defacing",
-      "closetful",
-      "miming",
-      "etiquette",
-      "longsome",
-      "lawrenciums",
-      "enlaced",
-      "nucleotide",
-      "sordines",
-      "mistrustfully",
-      "hoars",
-      "ruddiness",
-      "packsacks",
-      "asseverates",
-      "slot",
-      "feinting",
-      "undergrounds",
-      "tiercerons",
-      "ashmen",
-      "noon",
-      "doomsdayer",
-      "embrowns",
-      "sleeken",
-      "aforethought",
-      "antiphons",
-      "willingest",
-      "magnificent",
-      "reschools",
-      "jugheads",
-      "popularized",
-      "infundibuliform",
-      "papyrologists",
-      "buttonhole",
-      "endosymbiotic",
-      "reinfects",
-      "attorneyships",
-      "corrigibility",
-      "trues",
-      "nepotist",
-      "electrodermal",
-      "antibiotics",
-      "unseal",
-      "monteros",
-      "terrace",
-      "babbitt",
-      "unplumbed",
-      "minimally",
-      "vetchlings",
-      "utile",
-      "quin",
-      "liveryman",
-      "primage",
-      "impoverishes",
-      "delicatessens",
-      "moires",
-      "rabies",
-      "workload",
-      "hangover",
-      "achillea",
-      "bookstall",
-      "revulsion",
-      "pigging",
-      "maumetry",
-      "recoilless",
-      "hypochondriac",
-      "proses",
-      "petiteness",
-      "affectednesses",
-      "amenorrheic",
-      "frostworks",
-      "misrendered",
-      "stoups",
-      "overmatches",
-      "insouciance",
-      "ejector",
-      "generationally",
-      "diverters",
-      "brassiness",
-      "isogones",
-      "habitans",
-      "commissioning",
-      "wordlessness",
-      "thermalization",
-      "hypnotisms",
-      "harridans",
-      "ringlets",
-      "trilobal",
-      "megalopolis",
-      "tinder",
-      "construable",
-      "costively",
-      "flippancy",
-      "sadhe",
-      "mobilizes",
-      "quaalude",
-      "quahog",
-      "millepede",
-      "intimists",
-      "hildings",
-      "unibody",
-      "anorthic",
-      "substitutive",
-      "papular",
-      "cofeatures",
-      "greasier",
-      "mir",
-      "briniest",
-      "ylem",
-      "misrendering",
-      "sueding",
-      "popelike",
-      "fracture",
-      "duellers",
-      "sorted",
-      "drabbet",
-      "splurge",
-      "preceptory",
-      "myosins",
-      "aerobraking",
-      "annuluses",
-      "coronaries",
-      "saggier",
-      "plainer",
-      "sleuthhound",
-      "lemonades",
-      "hydropic",
-      "particulate",
-      "taroks",
-      "larrups",
-      "zootechnics",
-      "kibitzer",
-      "theophyllines",
-      "chock",
-      "goopy",
-      "plasticenes",
-      "cleavages",
-      "septillion",
-    ];
-    const item = (_) => rw[Math.floor(Math.random() * rw.length)];
-
-    const stToUpper = (string) =>
-      string.charAt(0).toUpperCase() + string.slice(1);
-
-    function setRandomWord(e) {
-      // console.log(e);
-      e.innerHTML = "The " + stToUpper(item()) + " Meal";
-      // const x = document.getElementsByClassName('randomword');
-    }
-
-    // console.log(item());
-  </script>
   <body>
-    <div class="jumbotron bg-cover text-white header-background cover">
+    <div
+      class="jumbotron bg-cover text-white header-background cover text-center header"
+    >
       <!-- <div id="bg-hack-box" class="rotate"></div> -->
-      <img
+      <!-- <img
         id="bg-hack-box"
         class="rotate"
         src="https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA22564.jpg"
-      />
-      <div class="container py-5 text-center">
+      /> -->
+      <div class="container py-5">
         <!-- <h1 class="display-4 font-weight-bold"> -->
         <h1 class="text-primary titlename">Milliways</h1>
 
-        <div>
-          <strong class="text-secondary subtitle"
-            >The Restaurant at <br />
-            the End of the Universe</strong
-          >
-        </div>
-        <div class="subline">~~~ Hasty Site but tasty Food ~~~</div>
-
-        <!-- <input type="text" placeholder="Search for us in your Dimemsion" /> -->
-        <div
-          class="text-center"
-          style="width: 50%; margin-top: 30px; text-align: center"
+        <strong class="text-secondary subtitle"
+          >The Restaurant at <br />
+          the End of the Universe</strong
         >
-          <div class="input-group">
-            <input
-              class="form-control py-2 rounded-pill mr-1 pr-5"
-              type="search"
-              placeholder="Look for us in your Dimension"
+
+        <div class="subline">~~~ Hasty Site but tasty Food ~~~</div>
+      </div>
+
+      <!-- Searchbar Start -->
+      <div class="text-center searchbar-holder" style="">
+        <div class="input-group searchbar" style="">
+          <i class="fa fa-search" style="visibility: hidden"></i>
+          <input
+            class="form-control py-2 rounded-pill mr-1 pr-5"
+            type="search"
+            placeholder="Look for us in your Dimension"
+          />
+          <button class="btn rounded-pill border-0 ml-n5" type="button">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Searchbar End -->
+    </div>
+    <section class="container topspace">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4">
+          <article class="card" style="width: 100%">
+            <img
+              src="https://images.unsplash.com/photo-1571881319009-691f808b7e8c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80"
+              class="card-img-top"
+              alt="..."
             />
-            <span class="input-group-append">
-              <button class="btn rounded-pill border-0 ml-n5" type="button">
-                <i class="fa fa-search"></i>
-              </button>
-            </span>
+            <div class="card-body">
+              <h5
+                class="card-title randomword"
+                HIER_SOWAS_WIE_ON_RENDER="setRandomWord(this)"
+              >
+                Blaubber
+              </h5>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                atque optio laudantium animi recusandae consectetur amet
+                cupiditate odio, fugit iste.
+              </p>
+              <a href="#" class="btn btn-secondary">Preorder here!</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card" style="width: 100%">
+            <img
+              src="https://images.unsplash.com/photo-1581413397207-3e3654abd347?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1991&q=80"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Xxxxxxx</h5>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                atque optio laudantium animi recusandae consectetur amet
+                cupiditate odio, fugit iste.
+              </p>
+              <a href="#" class="btn btn-secondary">Preorder here!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card" style="width: 100%">
+            <img
+              src="https://images.unsplash.com/photo-1566751640620-a9dd00cfbab4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Xxxxxxx</h5>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                atque optio laudantium animi recusandae consectetur amet
+                cupiditate odio, fugit iste.
+              </p>
+              <a href="#" class="btn btn-secondary">Preorder here!</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <section>
-      <div class="container topspace">
-        <div class="row">
-          <div class="col-sm">
-            <div class="card" style="width: 100%">
-              <img
-                src="https://images.unsplash.com/photo-1571881319009-691f808b7e8c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5
-                  class="card-title randomword"
-                  HIER_SOWAS_WIE_ON_RENDER="setRandomWord(this)"
-                >
-                  Blaubber
-                </h5>
-                <p class="card-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Quasi atque optio laudantium animi recusandae consectetur amet
-                  cupiditate odio, fugit iste.
-                </p>
-                <a href="#" class="btn btn-secondary">Bla Bla</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="card" style="width: 100%">
-              <img
-                src="https://images.unsplash.com/photo-1581413397207-3e3654abd347?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1991&q=80"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Xxxxxxx</h5>
-                <p class="card-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Quasi atque optio laudantium animi recusandae consectetur amet
-                  cupiditate odio, fugit iste.
-                </p>
-                <a href="#" class="btn btn-secondary">Bla Bla</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="card" style="width: 100%">
-              <img
-                src="https://images.unsplash.com/photo-1566751640620-a9dd00cfbab4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Xxxxxxx</h5>
-                <p class="card-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Quasi atque optio laudantium animi recusandae consectetur amet
-                  cupiditate odio, fugit iste.
-                </p>
-                <a href="#" class="btn btn-secondary">Bla Bla</a>
-              </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card" style="width: 100%">
+            <img
+              src="https://images.unsplash.com/photo-1571881319009-691f808b7e8c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Xxxxxxx</h5>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                atque optio laudantium animi recusandae consectetur amet
+                cupiditate odio, fugit iste.
+              </p>
+              <a href="#" class="btn btn-secondary">Preorder here!</a>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm">
-            <div class="card" style="width: 100%">
-              <img
-                src="https://images.unsplash.com/photo-1571881319009-691f808b7e8c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Xxxxxxx</h5>
-                <p class="card-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Quasi atque optio laudantium animi recusandae consectetur amet
-                  cupiditate odio, fugit iste.
-                </p>
-                <a href="#" class="btn btn-secondary">Bla Bla</a>
-              </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card" style="width: 100%">
+            <img
+              src="https://images.unsplash.com/photo-1581413397207-3e3654abd347?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1991&q=80"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Xxxxxxx</h5>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                atque optio laudantium animi recusandae consectetur amet
+                cupiditate odio, fugit iste.
+              </p>
+              <a href="#" class="btn btn-secondary">Preorder here!</a>
             </div>
           </div>
-          <div class="col-sm">
-            <div class="card" style="width: 100%">
-              <img
-                src="https://images.unsplash.com/photo-1581413397207-3e3654abd347?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1991&q=80"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Xxxxxxx</h5>
-                <p class="card-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Quasi atque optio laudantium animi recusandae consectetur amet
-                  cupiditate odio, fugit iste.
-                </p>
-                <a href="#" class="btn btn-secondary">Bla Bla</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div class="card" style="width: 100%">
-              <img
-                src="https://images.unsplash.com/photo-1566751640620-a9dd00cfbab4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Xxxxxxx</h5>
-                <p class="card-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Quasi atque optio laudantium animi recusandae consectetur amet
-                  cupiditate odio, fugit iste.
-                </p>
-                <a href="#" class="btn btn-secondary">Bla Bla</a>
-              </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card" style="width: 100%">
+            <img
+              src="https://images.unsplash.com/photo-1566751640620-a9dd00cfbab4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1334&q=80"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Xxxxxxx</h5>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                atque optio laudantium animi recusandae consectetur amet
+                cupiditate odio, fugit iste.
+              </p>
+              <a href="#" class="btn btn-secondary">Preorder here!</a>
             </div>
           </div>
         </div>

@@ -2,18 +2,22 @@
 // See node_modules/bootstrap/scss/_variables.scss for all variables
 // $body-bg: #000;
 // $body-color: white;
-$primary: hotpink;
-$secondary: rgb(64, 208, 233);
+$primary: rgb(236, 71, 154);
+$secondary: rgb(3, 190, 223);
 $font-family-base: Arial;
 
 // Include all Bootstrap
 @import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Warnes&display=swap");
 
 // Add you custom CSS
+html,
 body {
   // padding: 20px;
   // font-family: "Warnes";
-  // font-family: "Warnes";
+  // font-family: $font-family-base;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .titlename {
@@ -21,8 +25,8 @@ body {
   font-size: 100px;
 
   color: #fff;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080,
-    0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px $primary, 0 0 30px $primary,
+    0 0 40px $primary, 0 0 55px $primary, 0 0 75px $primary;
 }
 
 // .shitty-neon {
@@ -34,8 +38,9 @@ body {
   font-size: 30px;
 
   color: #fff;
-  text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px #0373a7, 0 0 15px #0373a7,
-    0 0 20px #0373a7, 0 0 25px #0373a7, 0 0 33px #0373a7;
+  text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px $secondary,
+    0 0 15px $secondary, 0 0 20px $secondary, 0 0 25px $secondary,
+    0 0 33px $secondary;
 }
 .page-header {
   background-image: url("https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA22564.jpg");
@@ -59,6 +64,23 @@ body {
 .subline {
   margin-top: 16px;
   font-family: monospace;
+}
+
+.searchbar {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.searchbar-holder {
+  margin: 0px 0px 30px 0px;
+}
+
+.fa-search {
+  color: white;
+}
+
+.header {
+  background-image: url(https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA22564.jpg);
 }
 
 .cover {
@@ -119,12 +141,6 @@ body {
     -moz-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-
-  50% {
-  }
-  87.5% {
-    // background-position: -60vw 0, 0 0, 0 0;
-  }
   100% {
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
@@ -136,14 +152,14 @@ body {
 //   0% {
 //     // background-position: 0 0, 0 0, 0 0;
 //     // color: #fff;
-//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080,
-//       0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px $primary, 0 0 30px $primary,
+//       0 0 40px $primary, 0 0 55px $primary, 0 0 75px $primary;
 //   }
 
 //   80% {
 //     // color: #fff;
-//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080,
-//       0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px $primary, 0 0 30px $primary,
+//       0 0 40px $primary, 0 0 55px $primary, 0 0 75px $primary;
 //   }
 //   81% {
 //     color: rgb(48, 44, 44);
@@ -153,8 +169,8 @@ body {
 //   }
 //   82% {
 //     // color: #fff;
-//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080,
-//       0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px $primary, 0 0 30px $primary,
+//       0 0 40px $primary, 0 0 55px $primary, 0 0 75px $primary;
 //   }
 //   83% {
 //     color: rgb(48, 44, 44);
@@ -164,8 +180,8 @@ body {
 //   }
 //   100% {
 //     // color: #fff;
-//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080,
-//       0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+//     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px $primary, 0 0 30px $primary,
+//       0 0 40px $primary, 0 0 55px $primary, 0 0 75px $primary;
 //   }
 // }
 
